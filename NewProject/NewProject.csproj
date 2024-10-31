@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB1A42C8-50BD-45B7-9113-75CF8522E490}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewProject</RootNamespace>
+    <AssemblyName>NewProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GumroadLicensing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GumroadLicensing.1.0.3\lib\net40\GumroadLicensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenHtmlToPdf, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenHtmlToPdf.1.12.0.0\lib\net45\OpenHtmlToPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="c#\sboutn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashBoerd\frmDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoerd\frmDashBoard.Designer.cs">
+      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\frmAccessDeniedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\frmAccessDeniedForm.Designer.cs">
+      <DependentUpon>frmAccessDeniedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\ucInstructorDetailsWithFiler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructors\ucInstructorDetailsWithFiler.Designer.cs">
+      <DependentUpon>ucInstructorDetailsWithFiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmIMoreDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmIMoreDetails.Designer.cs">
+      <DependentUpon>frmIMoreDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClass\Global.cs" />
+    <Compile Include="Home\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmAdd_EditInstractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmAdd_EditInstractors.Designer.cs">
+      <DependentUpon>frmAdd_EditInstractors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmInstructorMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmInstructorMember.Designer.cs">
+      <DependentUpon>frmInstructorMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmInstructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmInstructors.Designer.cs">
+      <DependentUpon>frmInstructors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmShowInstructorDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmShowInstructorDetails.Designer.cs">
+      <DependentUpon>frmShowInstructorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmAdd_EditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmAdd_EditMember.Designer.cs">
+      <DependentUpon>frmAdd_EditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmFindMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmFindMember.Designer.cs">
+      <DependentUpon>frmFindMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmMembers.Designer.cs">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmShowMemberDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmShowMemberDetails.Designer.cs">
+      <DependentUpon>frmShowMemberDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\ucMemberDetailsWithFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\ucMemberDetailsWithFilter.Designer.cs">
+      <DependentUpon>ucMemberDetailsWithFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentDetails.Designer.cs">
+      <DependentUpon>frmShowPaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentHistory.Designer.cs">
+      <DependentUpon>frmShowPaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suscription\frmAddEditSuscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suscription\frmAddEditSuscription.Designer.cs">
+      <DependentUpon>frmAddEditSuscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suscription\frmShowSuscriptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suscription\frmShowSuscriptionDetails.Designer.cs">
+      <DependentUpon>frmShowSuscriptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suscription\frmSuscriptionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suscription\frmSuscriptionHistory.Designer.cs">
+      <DependentUpon>frmSuscriptionHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBelt\frmAddEditBeltTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBelt\frmAddEditBeltTest.Designer.cs">
+      <DependentUpon>frmAddEditBeltTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBelt\frmShowBeltTestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBelt\frmShowBeltTestDetails.Designer.cs">
+      <DependentUpon>frmShowBeltTestDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBelt\frmShowTestsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBelt\frmShowTestsHistory.Designer.cs">
+      <DependentUpon>frmShowTestsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucFilter.Designer.cs">
+      <DependentUpon>ucFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\ucInstructorDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Instructors\ucInstructorDetails.Designer.cs">
+      <DependentUpon>ucInstructorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\ucMemberDatails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\ucMemberDatails.Designer.cs">
+      <DependentUpon>ucMemberDatails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPersoneDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPersoneDetails.Designer.cs">
+      <DependentUpon>ucPersoneDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suscription\frmSupscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suscription\frmSupscription.Designer.cs">
+      <DependentUpon>frmSupscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestBelt\frmTestBelt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBelt\frmTestBelt.Designer.cs">
+      <DependentUpon>frmTestBelt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMainView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMainView.Designer.cs">
+      <DependentUpon>ucMainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSuscriptionDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSuscriptionDetails.Designer.cs">
+      <DependentUpon>ucSuscriptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ucUserDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ucUserDetails.Designer.cs">
+      <DependentUpon>ucUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAdd_EditUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAdd_EditUsers.Designer.cs">
+      <DependentUpon>frmAdd_EditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserDetails.Designer.cs">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashBoerd\frmDashBoard.resx">
+      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\frmAccessDeniedForm.resx">
+      <DependentUpon>frmAccessDeniedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\ucInstructorDetailsWithFiler.resx">
+      <DependentUpon>ucInstructorDetailsWithFiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmIMoreDetails.resx">
+      <DependentUpon>frmIMoreDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmAdd_EditInstractors.resx">
+      <DependentUpon>frmAdd_EditInstractors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmInstructorMember.resx">
+      <DependentUpon>frmInstructorMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmInstructors.resx">
+      <DependentUpon>frmInstructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmShowInstructorDetails.resx">
+      <DependentUpon>frmShowInstructorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmAdd_EditMember.resx">
+      <DependentUpon>frmAdd_EditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmFindMember.resx">
+      <DependentUpon>frmFindMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmMembers.resx">
+      <DependentUpon>frmMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmShowMemberDetails.resx">
+      <DependentUpon>frmShowMemberDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\ucMemberDetailsWithFilter.resx">
+      <DependentUpon>ucMemberDetailsWithFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmShowPaymentDetails.resx">
+      <DependentUpon>frmShowPaymentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmShowPaymentHistory.resx">
+      <DependentUpon>frmShowPaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Suscription\frmAddEditSuscription.resx">
+      <DependentUpon>frmAddEditSuscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suscription\frmShowSuscriptionDetails.resx">
+      <DependentUpon>frmShowSuscriptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suscription\frmSupscription.resx">
+      <DependentUpon>frmSupscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suscription\frmSuscriptionHistory.resx">
+      <DependentUpon>frmSuscriptionHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBelt\frmAddEditBeltTest.resx">
+      <DependentUpon>frmAddEditBeltTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBelt\frmShowBeltTestDetails.resx">
+      <DependentUpon>frmShowBeltTestDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBelt\frmShowTestsHistory.resx">
+      <DependentUpon>frmShowTestsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBelt\frmTestBelt.resx">
+      <DependentUpon>frmTestBelt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucFilter.resx">
+      <DependentUpon>ucFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\ucInstructorDetails.resx">
+      <DependentUpon>ucInstructorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMainView.resx">
+      <DependentUpon>ucMainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\ucMemberDatails.resx">
+      <DependentUpon>ucMemberDatails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPersoneDetails.resx">
+      <DependentUpon>ucPersoneDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucSuscriptionDetails.resx">
+      <DependentUpon>ucSuscriptionDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ucUserDetails.resx">
+      <DependentUpon>ucUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAdd_EditUsers.resx">
+      <DependentUpon>frmAdd_EditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserDetails.resx">
+      <DependentUpon>frmShowUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2c2cbdb4e317b345b632256e59d46ca0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\krate business Layer\krate business Layer.csproj">
+      <Project>{0089561d-d73c-407d-98ad-76139c4e4b91}</Project>
+      <Name>krate business Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Project %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-12-06_15-30-43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-12-06_15-36-33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2023-12-06_15-36-331.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instructor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Istructor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b465195ef8440d8086198493b6ed5945.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1bb2ca428bdd1acf7561d89e6c69283.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b465195ef8440d8086198493b6ed59451.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-error-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-more-64%281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

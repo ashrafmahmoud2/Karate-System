@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EC0B4E0-2748-4F67-96F8-7C6C82E8CBBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Karate_System_Forms_</RootNamespace>
+    <AssemblyName>Karate System%28Forms%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.9\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="c#\toggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashBoard\frmdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard\frmdashboard.Designer.cs">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractor\frmAdd_EditInstractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractor\frmAdd_EditInstractor.Designer.cs">
+      <DependentUpon>frmAdd_EditInstractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractor\frmInstractor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractor\frmInstractor.Designer.cs">
+      <DependentUpon>frmInstractor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instractor\frmInstractorFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instractor\frmInstractorFace.Designer.cs">
+      <DependentUpon>frmInstractorFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c#\Program.cs" />
+    <Compile Include="Member\frmAdd_EditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\frmAdd_EditMember.Designer.cs">
+      <DependentUpon>frmAdd_EditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\frmMeberFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\frmMeberFace.Designer.cs">
+      <DependentUpon>frmMeberFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member\frmMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member\frmMember.Designer.cs">
+      <DependentUpon>frmMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MmberInstractor\frmMemberInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MmberInstractor\frmMemberInstructor.Designer.cs">
+      <DependentUpon>frmMemberInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmAdd_EditPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmAdd_EditPayment.Designer.cs">
+      <DependentUpon>frmAdd_EditPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmPayment.Designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="subscription\frmAdd_EditSubscriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subscription\frmAdd_EditSubscriptions.Designer.cs">
+      <DependentUpon>frmAdd_EditSubscriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subscription\frmsubscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subscription\frmsubscription.Designer.cs">
+      <DependentUpon>frmsubscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAdd_EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAdd_EditUser.Designer.cs">
+      <DependentUpon>frmAdd_EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\usMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\usMain.Designer.cs">
+      <DependentUpon>usMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashBoard\frmdashboard.resx">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractor\frmAdd_EditInstractor.resx">
+      <DependentUpon>frmAdd_EditInstractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractor\frmInstractor.resx">
+      <DependentUpon>frmInstractor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instractor\frmInstractorFace.resx">
+      <DependentUpon>frmInstractorFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\frmAdd_EditMember.resx">
+      <DependentUpon>frmAdd_EditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\frmMeberFace.resx">
+      <DependentUpon>frmMeberFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member\frmMember.resx">
+      <DependentUpon>frmMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MmberInstractor\frmMemberInstructor.resx">
+      <DependentUpon>frmMemberInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmAdd_EditPayment.resx">
+      <DependentUpon>frmAdd_EditPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="subscription\frmAdd_EditSubscriptions.resx">
+      <DependentUpon>frmAdd_EditSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subscription\frmsubscription.resx">
+      <DependentUpon>frmsubscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAdd_EditUser.resx">
+      <DependentUpon>frmAdd_EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\usMain.resx">
+      <DependentUpon>usMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="c#\packages.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="c#\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\breaking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\krate business Layer\krate business Layer.csproj">
+      <Project>{0089561d-d73c-407d-98ad-76139c4e4b91}</Project>
+      <Name>krate business Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-maximize-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subscribtion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paying.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adu_Hadhoud.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instructor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fly.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
